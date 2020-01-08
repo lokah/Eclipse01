@@ -13,7 +13,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<%@ include file="./form/header.jsp" %>
 <%
 
 	int seq = Integer.parseInt(request.getParameter("seq"));
@@ -48,6 +48,6 @@
 </td>
 </tr>
 </table>
-
+<%@ include file="./form/footer.jsp" %>
 </body>
 </html>

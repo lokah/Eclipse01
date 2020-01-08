@@ -10,6 +10,7 @@
 </head>
 <body>
 
+
 <h1>글쓰기</h1>
 <form action="myinsertres.jsp" method="post">
 <table border="1">

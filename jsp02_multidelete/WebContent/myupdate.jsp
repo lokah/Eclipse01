@@ -28,7 +28,7 @@
 </head>
 
 <body>
-
+<%@ include file="./form/header.jsp" %>
 
 
 	<%
@@ -84,7 +84,7 @@
 
 				<td colspan="2" align="right"><input type="submit" value='수정'>
 
-					<input type="button" value='취소' onclick=""> <input
+					<input type="button" value='취소' onclick="location.href='mydetail.jsp?seq=<%=dto.getSeq()%>'"> <input
 					type="button" value='목록' onclick="location.href='mylist.jsp'">
 
 				</td>
@@ -98,7 +98,7 @@
 	</form>
 
 
-
+<%@ include file="./form/footer.jsp" %>
 </body>
 
 </html>

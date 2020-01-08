@@ -16,12 +16,39 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.4.1.js">
+</script>
 
 <script>
+
+$(function(){
+	
+	$("#muldeform").submit(function(){
+		
+	
+	if($("#muldelform input:checked").length==0){
+		
+		alert("하나 이상 체크해 주세요.")
+		return false;
+	}
+	
+	});
+});
+
 
 function wirteForm(){
 	location.href="boardwriteform.jsp";
 	
+	
+}
+
+function allChk(bool){
+	
+	var chks = document.getElementsByName("chk");//[chk,chk,chk...]배열로 가져온다.
+	for(var i=0; i<chks.length; i++){
+		
+		chks[i].checked = bool;
+	}
 	
 }
 </script>
